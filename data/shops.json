@@ -1,0 +1,46 @@
+{
+  "shops": [
+    {
+      "name": "Flowers",
+      "description": "Shop early then relax!Order for Christmas delivery today.",
+      "number": 1,
+      "timeOfWork": "10-22",
+      "address": "Goreckogo str. 37, Minsk"
+    },
+    {
+      "name": "Laptops",
+      "description": "Much more than just a computer, a laptop is your social, business, and education hub.",
+      "number": 2,
+      "timeOfWork": "11-21",
+      "address": " 1 Portal Way, London, W3 6RS"
+    },
+    {
+      "name": "Phones",
+      "description": "Cell Phones & Accessories",
+      "number": 3,
+      "timeOfWork": "9-23",
+      "address": "Lenina str. 1 , Minsk"
+    },
+    {
+      "name": "Clothes",
+      "description": " IS A GLOBAL ONLINE FASHION RETAILER OFFERING THOUSANDS OF STYLES",
+      "number": 4,
+      "timeOfWork": "10-22",
+      "address": "Postfach 4761, 30047 Hanover"
+    },
+    {
+      "name": "Tyres",
+      "description": "In our Shop you can buy tires well-known manufacturers: like DUNLOP, Bridgestone and etc. ",
+      "number": 5,
+      "timeOfWork": "8-19",
+      "address": "Sharangovicha str. 22"
+    },
+    {
+      "name": "Sports Equipment",
+      "description": "Sport is life",
+      "number": 6,
+      "timeOfWork": "7-19",
+      "address": "Lobanka str. 33"
+    }
+  ]
+}

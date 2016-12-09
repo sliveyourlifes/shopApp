@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "name": "Acer",
+      "description": "Some information"
+    },
+    {
+      "name": "Asus",
+      "description": "Some information"
+    },
+    {
+      "name": "MacBook",
+      "description": "Some information"
+    },
+    {
+      "name": "HP",
+      "description": "Some information"
+    },
+    {
+      "name": "Dell",
+      "description": "Some information"
+    }
+  ],
+  "coords": {
+    "latitude": 33.747252,
+    "longitude": -112.633853
+  },
+  "address": "Wittmann, Arizona, USA",
+  "title": "Giant Triangle"
+}
+

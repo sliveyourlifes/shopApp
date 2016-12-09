@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shops Title</title>
+    <script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyAeHjPfOSyP1_eh-Nvv1l8IllA5Vuo2xLU&callback=initMap'></script>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <navigationbar></navigationbar>
+    </div>
+    <div ng-view></div>
+    <footer class="modal-footer " style="margin-top: 35px">
+        <span>© 2016 Company, Inc.</span>
+    </footer>
+</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="module/app.js"></script>
+<script src="controller/shopController.js"></script>
+<script src="directives/navDirective.js"></script>
+<script src="controller/productController.js"></script>
+
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="css/main.css">
+</body>
+</html>

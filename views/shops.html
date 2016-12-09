@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="row">
+        <div class="jumbotron col-xs-10 col-xs-offset-1">
+            <h1 style="text-align: center">You Are WELCOME!!!</h1>
+            <p>On this page you can see shops and there products. Also you can add/delete new shop or product, and can
+                change kind of products in the shop. </p>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="box col-md-4 col-sm-6 col-xs-12 " ng-repeat="shop in shops">
+            <h1><a style="color: gray; text-decoration: none" href="#/shops/{{shop.name}}"> {{shop.name}} </a>
+                <button style="border-radius: 50%" class="btn btn-warning btn-xs" ng-click="deleteShop(shop)">del
+                </button>
+            </h1>
+            <h3>{{shop.description}}</h3>
+            <h5> Working time: {{shop.timeOfWork}}</h5>
+            <h5>Address: {{shop.address}}</h5>
+            <a style="color: gray;" href="#/shops/{{shop.name}}"><h3>See all products&rarr;</h3></a>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3" style="padding-top: 50px">
+            <h2> You can make YOUR personal shop</h2>
+        </div>
+        <div class=" col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3" style="margin-top: 25px">
+
+            <form name='clientForm' novalidate role='form'>
+                <div class='form-group'>
+                    <label>Shop:</label>
+                    <input class='form-control' ng-model='name' name="name" type="text" required>
+                    <span class='help-block' ng-show='clientForm.name.$error.required'>Name is required</span>
+                </div>
+                <div class='form-group'>
+                    <label>Description</label>
+                    <input class='form-control' ng-model='description' name="description" type="text" required>
+                    <span class='help-block' ng-show='clientForm.description.$error.required'>Name is required</span>
+                </div>
+                <div class='form-group'>
+                    <label>time Of Work</label>
+                    <input class='form-control' ng-model='timeOfWork'  name="time"  type="text" required>
+                    <span class='help-block' ng-show='clientForm.time.$error.required'>Name is required</span>
+                </div>
+                <div class='form-group'>
+                    <label>address</label>
+                    <input class='form-control' ng-model='address' name="address" type="text" required>
+                    <span class='help-block' ng-show='clientForm.address.$error.required'>Name is required</span>
+                </div>
+                <button class="btn btn-warning" ng-click="addShop(name,description ,number,timeOfWork,address)" ng-disabled='clientForm.$invalid' style="margin-left: 136px;">add Shop
+                </button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+

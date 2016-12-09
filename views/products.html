@@ -1,0 +1,71 @@
+<style>
+    #map{
+         height: inherit;
+         width: inherit;
+     }
+</style>
+<div class="container">
+    <div class="row">
+        <table class="table table-hover" style="margin-top: 30px;">
+            <thead>
+            <tr>
+                <th></th>
+                <th class="col-xs-2">Product</th>
+                <th class="col-xs-7">Description</th>
+                <th class="col-xs-3">Actions</th>
+            </tr>
+            </thead>
+            <tbody ng-repeat="product in products">
+            <tr ng-if='product !== activeProduct'>
+                <td>{{$index +1}}</td>
+                <td style="font-weight: bold"> {{product.name}}</td>
+                <td> {{product.description}}</td>
+                <td>
+                    <a class="btn btn-danger" href="" ng-click="delete(product)">Delete</a>
+                    <a class='btn btn-primary' href='' ng-click='edit(product)'> Edit </a>
+                </td>
+            </tr>
+            <tr ng-if='product === activeProduct'>
+                <td>{{$index +1}}</td>
+                <td><input class='form-control' ng-model='product.name' type='text'></td>
+                <td><input class='form-control' ng-model='product.description' type='text'></td>
+                <td>
+                    <a class='btn btn-primary' href='' ng-click='update(product)'> Update </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3" style="padding-top: 50px">
+            <h2> You can make YOUR personal product</h2>
+        </div>
+        <form role='form' name="productForm" novalidate class="col-xs-6 col-xs-offset-3">
+            <div class='form-group'>
+                <label>Name:</label>
+                <input class='form-control' ng-model='name' type='text' name="name" required>
+                <span class='help-block' ng-show='productForm.name.$error.required'>Name is required</span>
+            </div>
+            <div class='form-group'>
+                <label>Description</label>
+                <input class='form-control' ng-model='description' name="description" type="text" required>
+                <span class='help-block' ng-show='productForm.description.$error.required'>Name is required</span>
+            </div>
+            <button class='btn btn-primary' ng-disabled='productForm.$invalid' ng-click='create(name,description)'
+                    style="margin-left: 150px;
+">Save
+            </button>
+        </form>
+    </div>
+    <div class="row  col-xs-12" style="height: 500px; margin-top: 35px">
+        <h2 style="text-align: center"> You can find Us in Google Maps</h2>
+        <div id="map"></div>
+    </div>
+    <div class="row" >
+        <a class="btn btn-default btn-lg active col-xs-1 col-xs-offset-11" href="#/" role="button" style="width: 60px; margin-top: 100px">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </a>
+    </div>
+
+</div>
+

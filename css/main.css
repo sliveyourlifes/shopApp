@@ -1,0 +1,15 @@
+
+.box {
+    box-sizing: border-box;
+    text-align: center;
+    height: 250px;
+    vertical-align: middle;
+    display: inline-block;
+    color: darkgray;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+#map{
+    height: inherit;
+    width: inherit;
+}

@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "name": "fitBall",
+      "description": "Some information"
+    },
+    {
+      "name": "dumbbell",
+      "description": "Some information"
+    },
+    {
+      "name": "mouth guard",
+      "description": "Some information"
+    },
+    {
+      "name": "expander",
+      "description": "Some information"
+    },
+    {
+      "name": "tennis racquet",
+      "description": "Some information"
+    }
+  ],
+  "coords": {
+    "latitude": 37.629562,
+    "longitude": -116.849556
+  },
+  "address": "Nevada, USA",
+  "title": "Mysterious Pattern"
+}
+
+
+
+
+
+
+

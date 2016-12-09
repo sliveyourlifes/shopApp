@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "name": "Dunlop",
+      "description": "Some information"
+    },
+    {
+      "name": "Continental",
+      "description": "Some information"
+    },
+    {
+      "name": "Bridgestone",
+      "description": "Some information"
+    },
+    {
+      "name": "Hankock",
+      "description": "Some information"
+    },
+    {
+      "name": "Nokian",
+      "description": "Some information"
+    }
+  ],
+  "coords": {
+    "latitude": 39.623119,
+    "longitude": -107.635353
+  },
+  "address": "New Castle, Colorado, USA",
+  "title": "Concentric Cirlces"
+}
+

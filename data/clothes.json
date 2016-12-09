@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "name": "t-short",
+      "description": "Some information"
+    },
+    {
+      "name": "gloves",
+      "description": "Some information"
+    },
+    {
+      "name": "shoes",
+      "description": "Some information"
+    },
+    {
+      "name": "jackets",
+      "description": "Some information"
+    },
+    {
+      "name": "pulover",
+      "description": "Some information"
+    }
+  ],
+  "coords": {
+    "latitude": -33.867886,
+    "longitude":-63.987
+  },
+  "address": "Córdoba, Argentina",
+  "title": "Guitar-Shaped Forest"
+}
